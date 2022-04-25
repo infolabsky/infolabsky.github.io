@@ -7,7 +7,6 @@ function initConfig(){
 	DOMUtil.setInnerHtml("header-title", HEADER_TITLE);
 		
 	let targetId = cleanInput(getURLParam());
-	console.log(targetId)
 	if(targetId){
 		showResult(targetId);
 	}
@@ -36,7 +35,7 @@ function showResult(targetId){
 			noext: './text'
 		}
 	});
-	require(["noext!../assets/data/data.json",], function(rawData){
+	require(["noext!../assets/data/data.json"], function(rawData){
 		let json = JSON.parse(rawData);
 		let data = getDataById(targetId, json);
 		process(data);
