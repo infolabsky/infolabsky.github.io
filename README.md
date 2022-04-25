@@ -1,4 +1,6 @@
-# rozaan002.github.io
-github page rozaan002
+# Page Kelulusan
 
-This page is only for testing purpose only and can includes many branches for maybe totally different contents
+Repositori ini terdiri dari halaman web untuk mempublikasi kelulusan siswa.
+Data siswa disimpan dalam bentuk JSON
+
+Tool untuk mengubah struktur dari CSV ke JSON akan di masukan kedalam repo ini (coming soon)

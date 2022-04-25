@@ -1,0 +1,18 @@
+.text-center{
+	text-align: center
+}
+
+#result-container{
+	color: #0c0cb3;
+    font-weight: 600;
+}
+
+#student-result{
+	font-size: xx-large;
+	color: orange;
+}
+
+.additional{
+	color: black;
+}
+

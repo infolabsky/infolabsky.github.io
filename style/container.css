@@ -1,0 +1,20 @@
+.container{
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+.c-flex, .c-flex-vertical{
+	display: flex;
+}
+
+.c-flex-vertical{
+	flex-direction: column;
+}
+
+.c-justify-center, .c-center{
+	justify-content: center;
+}
+
+.c-align-center, .c-center{
+	align-items: center;
+}

@@ -1,0 +1,25 @@
+@import "container.css";
+@import "input.css";
+@import "result-style.css";
+@import "card.css";
+@import "backgrounds.css";
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 98vh;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+	height: 100%
+}
+
+.hide{
+	display: none;
+}
+
+h2{
+	margin: 0px;
+	padding: 0.5em;
+}
