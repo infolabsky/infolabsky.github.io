@@ -25,5 +25,7 @@ function sendFeedback(str){
 }
 
 function cleanInput(str){
+	if(!str)
+		return str;
 	return str.replaceAll(invalidSymbol, "");
 }
