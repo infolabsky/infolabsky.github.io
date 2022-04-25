@@ -3,7 +3,7 @@ body{
 	background-color: white;
 	background-position:center;
 	background-attachment:fixed;
-	background-size:100% auto;
+	background-size:auto 100%;
 }
 
 .card{
@@ -20,4 +20,11 @@ body{
 .blur-effect{
 	-webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
+	background-color: #ffffff94;
+}
+
+@media (min-width: 1180px){
+	body{
+		background-size: 100% auto;
+	}
 }
