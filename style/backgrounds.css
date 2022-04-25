@@ -1,13 +1,23 @@
 body{
 	background-image: url("../assets/images/background.png");
+	background-color: white;
 	background-position:center;
 	background-attachment:fixed;
-	background-size:cover;
+	background-size:100% auto;
 }
 
 .card{
 	background-color: white;
 	background-position:center;
 	background-attachment:fixed;
-	background-size:cover;
+	background-size:auto 100%;
+}
+
+.card.with-background{
+	background-image: url("../assets/images/card-background.png");
+}
+
+.blur-effect{
+	-webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
