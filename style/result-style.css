@@ -2,6 +2,10 @@
 	text-align: center
 }
 
+.header-title{
+	color: black;
+}
+
 #result-container{
 	color: #0c0cb3;
     font-weight: 600;

@@ -1,3 +1,14 @@
-command: npx browser-sync start --server --files "*.html, js/*.js"
+command: npx browser-sync start --server --files "*.html, js/*.js, *.js"
 
 requirement: node.js
+
+how to:
+1. Download node js (if not already yet)
+2. Check if node successfully installed:
+  - open cmd
+  - run: npm version
+  - npm version should be showed
+3. Open project directory from windows explorer (where you can find index.html)
+4. click path field, which contains e.g. "C:xxxx/yyyy/zzzz" and replace it with "cmd" to open current directory in cmd
+5. run npx command above
+6. localhost and the port should be shown and you can copy paste it in browser to see the result

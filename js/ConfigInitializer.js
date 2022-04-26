@@ -31,7 +31,8 @@ function showResult(targetId){
 			noext: './text'
 		}
 	});
-	require(["noext!../assets/data/data.csv", "js/papaparse.min.js"], function(rawData, Papa){
+	let dataPath = "noext!../assets/data/" + DATA_FILE_NAME;
+	require([dataPath, "js/papaparse.min.js"], function(rawData, Papa){
 		rawData = standarizeStructure(rawData);
 		let json = Papa.parse(rawData, {header:true});
 		let data = getDataById(targetId, json.data);
