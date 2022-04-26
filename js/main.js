@@ -1,8 +1,6 @@
-
-var rawData = null;
-
 require([
-		"js/Config.js", 
+		"Config.js",
+		"js/ConfigInitializer.js", 
 		"js/inputChecker.js",
 		"js/DOMUtil.js",
 		"js/resultProcessor.js"], function(){
