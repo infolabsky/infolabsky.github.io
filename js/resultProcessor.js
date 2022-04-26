@@ -6,36 +6,36 @@ function process(studentInfo){
 	}
 	DOMUtil.toggleClass("result-container", "hide");
 	let status = studentInfo.status;
-	if(status==STATUS_PASS)
-		renderPass(studentInfo);
-	else if(status==STATUS_NOT_PASS)
-		renderNotPass(studentInfo);
+	if(status==STATUS_PASSED)
+		renderPassed(studentInfo);
+	else if(status==STATUS_FAILED)
+		renderFailed(studentInfo);
 	else 
 		renderUnknown(studentInfo);
 }
 
-function renderPass(studentInfo){
-	DOMUtil.setTextContent("intro-text", "Selamat untuk");
+function renderPassed(studentInfo){
+	DOMUtil.setTextContent("intro-text", INTRO_TEXT_PASS);
 	DOMUtil.setTextContent("student-name", studentInfo.name);
 	DOMUtil.setTextContent("student-class", studentInfo.class);
-	DOMUtil.setTextContent("intro-text-end", "dinyatakan:");
+	DOMUtil.setTextContent("intro-text-end", INTRO_TEXT_END_PASS);
 	DOMUtil.setTextContent("student-result", studentInfo.status.toUpperCase());
-	DOMUtil.setInnerHtml("outtro-text", "menempuh pendidikan di<br>SMA LABSCHOOL<br>KEBAYORAN");
-	DOMUtil.setTextContent("additional-text", "SELAMAT DAN SEMOGA SUKSES!");
+	DOMUtil.setInnerHtml("outtro-text", OUTTRO_TEXT_PASS);
+	DOMUtil.setTextContent("additional-text", ADDITIONAL_TEXT_PASS);
 }
 
-function renderNotPass(studentInfo){
-	DOMUtil.setTextContent("intro-text", "Mohon maaf");
+function renderFailed(studentInfo){
+	DOMUtil.setTextContent("intro-text", INTRO_TEXT_FAIL);
 	DOMUtil.setTextContent("student-name", studentInfo.name);
 	DOMUtil.setTextContent("student-class", studentInfo.class);
-	DOMUtil.setTextContent("intro-text-end", "dinyatakan:");
+	DOMUtil.setTextContent("intro-text-end", INTRO_TEXT_END_FAIL);
 	DOMUtil.setTextContent("student-result", studentInfo.status.toUpperCase());
-	DOMUtil.setInnerHtml("outtro-text", "dari pendidikan di<br>SMA LABSCHOOL<br>KEBAYORAN");
+	DOMUtil.setInnerHtml("outtro-text", OUTTRO_TEXT_FAIL);
 }
 
 function renderUnknown(studentInfo){
 	DOMUtil.setTextContent("student-name", studentInfo.name);
 	DOMUtil.setTextContent("student-class", studentInfo.class);
-	DOMUtil.setTextContent("intro-text-end", "hasil:");
+	DOMUtil.setTextContent("intro-text-end", INTRO_TEXT_END_UNKNOWN);
 	DOMUtil.setTextContent("student-result", studentInfo.status.toUpperCase());
 }

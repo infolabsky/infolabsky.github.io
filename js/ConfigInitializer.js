@@ -10,7 +10,7 @@ function initConfig(){
 		showResult(targetId);
 	}
 	else if(currentPath == HOME_PATH){
-		DOMUtil.toggleClass("input-container", "hide"); //remove hide from class
+		showInputField();
 	}
 }
 
@@ -49,4 +49,9 @@ function standarizeStructure(rawData){
 	rawData = rawData.replaceAll(DATA_HEADER_UID, "id");
 	rawData = rawData.replaceAll(DATA_HEADER_STAT, "status");
 	return rawData;
+}
+
+function showInputField(){
+	DOMUtil.setTextContent("input-label", INPUT_LABEL);
+	DOMUtil.toggleClass("input-container", "hide"); //remove hide from class
 }
