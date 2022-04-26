@@ -14,40 +14,9 @@
 		</header>
 		
 		<main>
-			<div class="container hide" id="result-container">
-				<div class="card with-background">
-					<div class="card blur-effect">
-						<div class="container c-flex-vertical c-center">
-							<img class="logo-img" src="assets/images/logo.png" width="150px" height="150px"></img>
-							<h3 class="header-title text-center" id="header-title"></h3>
-						</div>
-						<div class="container c-flex c-center">
-							<div class="congrats-text c-flex-vertical c-center">
-								<section class="intro-sect c-flex-vertical c-center mb-3">
-									<div><span id="intro-text"></span></div>
-									<h2 id="student-name"></h2>
-									<div id="student-class"></div>
-									<div id="intro-text-end"></div>
-								</section>
-								<section class="result-sect mb-3">
-									<div class="result-text" id="student-result"></div>
-								</section>
-								<section class="outtro-sect mb-3">
-									<div class="outtro text-center" id="outtro-text"></div>
-								</section>
-								<section class="end-sect mb-3">
-									<div class="additional" id="additional-text"></div>
-								</section>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
 			<div class="container hide" id="input-container">
 				<div class="container card">
-					<form class="container c-flex-vertical" onsubmit="return checkInput()">
+					<form class="container c-flex-vertical" onsubmit="return checkInput()" action="pages/result.html">
 						<div class="container c-flex-vertical">
 							<label for="id">Masukan nomor unik: </label>
 							<input type="text" id="id-input" name="id">
@@ -55,12 +24,6 @@
 						<button>lihat hasil</button>
 					</form>
 					<div class="err-feedback text-center" id="err-feedback"></div>
-				</div>
-			</div>
-			
-			<div class="container hide" id="id-not-found">
-				<div class="container card">
-					<h3 class="header-title text-center" id="header-title">Data tidak ditemukan</h3>
 				</div>
 			</div>
 		</main>

@@ -4,9 +4,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=.8">
 		<title id="browser-title">Pengumuman Kelulusan</title>
-		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="../style/style.css">
 		<script src="https://smtpjs.com/v3/smtp.js"></script>
-		<script data-main="js/main.js" src="js/require.js"></script>
+		<script data-main="/js/main.js" src="/js/require.js"></script>
 	</head>	
 	<body>
 		<header>
@@ -14,7 +14,41 @@
 		</header>
 		
 		<main>
-			test
+			<div class="container hide" id="result-container">
+				<div class="card with-background">
+					<div class="card blur-effect">
+						<div class="container c-flex-vertical c-center">
+							<img class="logo-img" src="../assets/images/logo.png" width="150px" height="150px"></img>
+							<h3 class="header-title text-center" id="header-title"></h3>
+						</div>
+						<div class="container c-flex c-center">
+							<div class="congrats-text c-flex-vertical c-center">
+								<section class="intro-sect c-flex-vertical c-center mb-3">
+									<div><span id="intro-text"></span></div>
+									<h2 id="student-name"></h2>
+									<div id="student-class"></div>
+									<div id="intro-text-end"></div>
+								</section>
+								<section class="result-sect mb-3">
+									<div class="result-text" id="student-result"></div>
+								</section>
+								<section class="outtro-sect mb-3">
+									<div class="outtro text-center" id="outtro-text"></div>
+								</section>
+								<section class="end-sect mb-3">
+									<div class="additional" id="additional-text"></div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container hide" id="id-not-found">
+				<div class="container card">
+					<h3 class="header-title text-center" id="header-title">Data tidak ditemukan</h3>
+				</div>
+			</div>
 		</main>
 		
 		<footer>

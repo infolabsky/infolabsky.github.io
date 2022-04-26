@@ -3,10 +3,13 @@ function initConfig(){
 	DOMUtil.setInnerHtml("header-title", HEADER_TITLE);
 		
 	let targetId = cleanInput(getURLParam());
-	if(targetId){
+	let currentPath = window.location.pathname;
+	if(targetId==null)
+		targetId = "404-not found!";
+	if(targetId && currentPath == RESULT_PATH){
 		showResult(targetId);
 	}
-	else{
+	else if(currentPath == HOME_PATH){
 		DOMUtil.toggleClass("input-container", "hide"); //remove hide from class
 	}
 }
@@ -31,8 +34,8 @@ function showResult(targetId){
 			noext: './text'
 		}
 	});
-	let dataPath = "noext!../assets/data/" + DATA_FILE_NAME;
-	require([dataPath, "js/papaparse.min.js"], function(rawData, Papa){
+	let dataPath = "noext!/assets/data/" + DATA_FILE_NAME;
+	require([dataPath, "/js/papaparse.min.js"], function(rawData, Papa){
 		rawData = standarizeStructure(rawData);
 		let json = Papa.parse(rawData, {header:true});
 		let data = getDataById(targetId, json.data);

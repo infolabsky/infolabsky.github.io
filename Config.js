@@ -13,3 +13,11 @@ const STATUS_PASS = "lulus";
 const STATUS_NOT_PASS = "tidak lulus";
 
 //------------------------------
+
+
+//----Less likely configured variables----
+
+const HOME_PATH = "/";
+const RESULT_PATH = "/pages/result.html";
+
+//------------------------------
