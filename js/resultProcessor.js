@@ -29,6 +29,7 @@ function renderFailed(studentInfo){
 	DOMUtil.setTextContent("student-name", studentInfo.name);
 	DOMUtil.setTextContent("student-class", studentInfo.class);
 	DOMUtil.setTextContent("intro-text-end", INTRO_TEXT_END_FAIL);
+	DOMUtil.setColor("student-result", "red");
 	DOMUtil.setTextContent("student-result", studentInfo.status.toUpperCase());
 	DOMUtil.setInnerHtml("outtro-text", OUTTRO_TEXT_FAIL);
 }

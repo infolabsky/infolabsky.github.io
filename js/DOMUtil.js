@@ -38,6 +38,18 @@ class DOMUtil{
 		0);
 	}
 	
+	static setColor(elId, color){
+		this.#reDo(this.redoLimit, ()=>{
+			let el = document.getElementById(elId);
+			if(el!=null){
+				el.style.color = color;
+				return true;
+			}
+			return false;
+		}, 
+		0);
+	}
+	
 	static #reDo(limitTimes, fn, currentTime){
 		if(currentTime>limitTimes)
 			return;
