@@ -3,6 +3,8 @@
 @import "result-style.css";
 @import "card.css";
 @import "backgrounds.css";
+@import "animation.css";
+
 
 body{
 	margin: 0px;
@@ -16,7 +18,11 @@ main{
 }
 
 .hide{
-	display: none;
+	visibility: collapse;
+	opacity: 0%;
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 h2{
