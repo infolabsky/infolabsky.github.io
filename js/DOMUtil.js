@@ -1,7 +1,9 @@
 
 class DOMUtil{
+	static redoLimit = 100;
+	
 	static setInnerHtml(elId, content){
-		this.#reDo(50, ()=>{
+		this.#reDo(this.redoLimit, ()=>{
 			let el = document.getElementById(elId);
 			if(el!=null){
 				el.innerHTML = content;
@@ -13,7 +15,7 @@ class DOMUtil{
 	}
 	
 	static setTextContent(elId, text){
-		this.#reDo(50, ()=>{
+		this.#reDo(this.redoLimit, ()=>{
 			let el = document.getElementById(elId);
 			if(el!=null){
 				el.textContent = text;
@@ -25,7 +27,7 @@ class DOMUtil{
 	}
 	
 	static toggleClass(elId, className){
-		this.#reDo(50, ()=>{
+		this.#reDo(this.redoLimit, ()=>{
 			let el = document.getElementById(elId);
 			if(el!=null){
 				el.classList.toggle(className);
@@ -39,12 +41,21 @@ class DOMUtil{
 	static #reDo(limitTimes, fn, currentTime){
 		if(currentTime>limitTimes)
 			return;
-		setTimeout(()=>{
-			let isSuccess = fn();
-			if(!isSuccess){
-				currentTime += 1;
-				this.#reDo(limitTimes, fn, currentTime);
-			}
-		}, 50);
+		if(currentTime>0){
+			setTimeout(()=>{
+				this.#executeFunction(limitTimes, fn, currentTime);
+			}, 25);
+		}
+		else{
+			this.#executeFunction(limitTimes, fn, currentTime);
+		}
+	}
+	
+	static #executeFunction(limitTimes, fn, currentTime){
+		let isSuccess = fn();
+		if(!isSuccess){
+			currentTime += 1;
+			this.#reDo(limitTimes, fn, currentTime);
+		}
 	}
 }
