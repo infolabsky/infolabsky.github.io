@@ -6,6 +6,10 @@
 	color: black;
 }
 
+#header-title{
+	margin-bottom: 0px;
+}
+
 #result-container{
 	color: #0c0cb3;
     font-weight: 600;
@@ -13,7 +17,7 @@
 
 #student-result{
 	font-size: xx-large;
-	color: orange;
+	color: #e39403;
 }
 
 .additional{
