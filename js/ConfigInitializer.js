@@ -54,4 +54,7 @@ function standarizeStructure(rawData){
 function showInputField(){
 	DOMUtil.setTextContent("input-label", INPUT_LABEL);
 	DOMUtil.toggleClass("input-container", "hide"); //remove hide from class
+	setTimeout(()=>{
+	DOMUtil.toggleClass("home-img", "hide");		
+	}, 100);
 }
