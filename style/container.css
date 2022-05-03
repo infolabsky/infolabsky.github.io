@@ -18,11 +18,3 @@
 .c-align-center, .c-center{
 	align-items: center;
 }
-
-.container.c-full-screen{
-	margin-top: 0%;
-    margin-bottom: 0%;
-    height: 100vh;
-    padding-top: 0%;
-    padding-bottom: 0%;
-}
