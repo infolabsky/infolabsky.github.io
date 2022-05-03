@@ -8,13 +8,13 @@ const INPUT_LABEL = "Masukan username US:";
 //pass
 const INTRO_TEXT_PASS = "Selamat untuk";
 const INTRO_TEXT_END_PASS = "Dinyatakan:";
-const OUTTRO_TEXT_PASS = "Menempuh Pendidikan di<br>SMA LABSCHOOL<br>KEBAYORAN";
+const OUTTRO_TEXT_PASS = "Menempuh Pendidikan di<br>SMA LABSCHOOL KEBAYORAN";
 const ADDITIONAL_TEXT_PASS = "SELAMAT DAN SEMOGA SUKSES!";
 
 //failed
 const INTRO_TEXT_FAIL = "Mohon Maaf";
 const INTRO_TEXT_END_FAIL = "Dinyatakan:";
-const OUTTRO_TEXT_FAIL = "dari Pendidikan di<br>SMA LABSCHOOL<br>KEBAYORAN";
+const OUTTRO_TEXT_FAIL = "dari Pendidikan di<br>SMA LABSCHOOL KEBAYORAN";
 const ADDITIONAL_TEXT_FAIL = "";
 
 //unknown result
