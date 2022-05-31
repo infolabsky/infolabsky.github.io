@@ -2,7 +2,7 @@
 
 //UI general text
 const HEADER_TITLE = "PENGUMUMAN KELULUSAN<br>SMA LABSCHOOL KEBAYORAN<br>TA 2021-2022";
-const INPUT_LABEL = "Masukan username US:";
+const INPUT_LABEL = "Nama Lengkap Siswa:";
 
 //UI Result text
 //pass
@@ -25,11 +25,12 @@ const ADDITIONAL_TEXT_UNKNOWN = "";
 
 
 //data configurations
-const DATA_FILE_NAME = "DATA BUAT KELULUSAN.csv";
-const DATA_HEADER_NAME = "NAMA LENGKAP";
+const DATA_FILE_NAME = "DATA NOMOR KURSI NAVANANTA WISUDA.csv";
+const DATA_HEADER_NAME = "NAMA";
 const DATA_HEADER_CLASS = "KELAS";
-const DATA_HEADER_UID = "username US";
-const DATA_HEADER_STAT = "KETERANGAN";
+const DATA_HEADER_UID = "ID";
+const DATA_HEADER_STAT = "NO KURSI OTM1";
+const DATA_HEADER_STAT_2 = "NO KURSI OTM2";
 const STATUS_PASSED = "LULUS";
 const STATUS_FAILED = "TIDAK LULUS";
 

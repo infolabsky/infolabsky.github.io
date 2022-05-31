@@ -3,7 +3,8 @@
 }
 
 .header-title{
-	color: black;
+	color: #4c422e;
+	margin: 0px;
 }
 
 #header-title{
@@ -15,9 +16,9 @@
     font-weight: 600;
 }
 
-#student-result{
-	font-size: xx-large;
-	color: #e39403;
+#student-result, #student-result-2{
+	font-size: 50px;
+    color: #4c422e;
 }
 
 .additional{

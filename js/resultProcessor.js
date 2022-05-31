@@ -38,5 +38,24 @@ function renderUnknown(studentInfo){
 	DOMUtil.setTextContent("student-name", studentInfo.name);
 	DOMUtil.setTextContent("student-class", studentInfo.class);
 	DOMUtil.setTextContent("intro-text-end", INTRO_TEXT_END_UNKNOWN);
-	DOMUtil.setTextContent("student-result", studentInfo.status.toUpperCase());
+	DOMUtil.setTextContent("student-result", standarizeOutput(studentInfo.status.toUpperCase()));
+	DOMUtil.setTextContent("student-result-2", standarizeOutput(studentInfo.status2.toUpperCase()));
+}
+
+function standarizeOutput(text){
+	let splitted = text.split(" ");
+	if(splitted.length!=2) return text;
+	let number = splitted[0];
+	let alph = splitted[1];
+	number = standarizeNumber(number);
+	text = number + " " + alph;
+	return text;
+}
+
+function standarizeNumber(num){
+	if(num.length==3) return num;
+	for(let i=num.length; i<3; i++){
+		num = "0" + num;
+	}
+	return num;
 }

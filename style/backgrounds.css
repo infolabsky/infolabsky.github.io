@@ -23,13 +23,13 @@ body{
 
 @media screen and (orientation: landscape){
 	body{
-		background-image: url("../assets/images/background-landscape.png");		
+		background-image: url("../assets/images/background-landscape.png");
 	}
 }
 
 @media screen and (orientation: portrait){
 	body{
 		background-image: url("../assets/images/background-portrait.png");
-		background-size: 100%;
+		background-size: cover;
 	}
 }

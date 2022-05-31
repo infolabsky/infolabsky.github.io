@@ -8,50 +8,42 @@
 		<script data-main="/js/main.js" src="/js/require.js"></script>
 	</head>	
 	<body>
-		<header>
-			
-		</header>
 		
-		<main>
-			<div class="container full-vertical c-flex-vertical c-center hide" id="result-container">
-				<div class="card with-background">
-					<!--<div class="card blur-effect">-->
-						<div class="container c-flex-vertical c-center">
-							<img class="logo-img" src="../assets/images/logo.png" width="150px" height="150px"></img>
-							<h3 class="header-title text-center" id="header-title"></h3>
+		<div class="no-scroll-x no-scroll-y">
+			<header class="container full-horizontal c-flex c-center" style="max-height: 10em;">
+				<img class="logo" src="../assets/images/logo.png" style="width: 30%; max-width:150px; margin-left: 1em;"></img>
+				<img class="logo" src="../assets/images/WISUDA KE 20.svg" style="width: 70%;"></img>
+			</header>
+			
+			<main>
+				<div class="container full-all c-flex-vertical c-center hide" id="result-container">
+					<div class="container c-flex-vertical full-all">
+						<div class="container c-flex c-center" style="margin: 0px; padding: 0px;">
+							<img class="label" src="../assets/images/NAMA SISWA.svg"></img>
 						</div>
-						<div class="container c-flex c-center">
-							<div class="congrats-text c-flex-vertical c-center">
-								<section class="intro-sect c-flex-vertical c-center mb-3">
-									<div class="mb-2" id="intro-text"></div>
-									<h2 id="student-name"></h2>
-									<div class="mb-2" id="student-class"></div>
-									<div id="intro-text-end"></div>
-								</section>
-								<section class="result-sect mb-3">
-									<div class="result-text" id="student-result"></div>
-								</section>
-								<section class="outtro-sect mb-3">
-									<div class="outtro text-center" id="outtro-text"></div>
-								</section>
-								<section class="end-sect mb-3">
-									<div class="additional" id="additional-text"></div>
-								</section>
+						<h1 class="header-title text-center" id="student-name"></h1>
+						<h2 class="header-title mb-2 text-center" id="student-class"></h2>
+					
+						<div class="container c-flex c-center full-horizontal c-flex-vertical">
+							<div class="container white-background full-horizontal c-center c-flex" style="background-color: white;">
+								<img class="label" src="../assets/images/NOMER KURSI.svg" style="width: 200px; max-width: 250px"></img>
 							</div>
+							<div class="result-text" id="student-result"></div>
+							<div class="result-text" id="student-result-2"></div>
 						</div>
-					<!--</div>-->
+					</div>
 				</div>
-			</div>
-			
-			<div class="container full-vertical c-flex-vertical c-center hide" id="id-not-found">
-				<div class="container card">
-					<h3 class="header-title text-center">Data tidak ditemukan</h3>
+				
+				<div class="container full-vertical c-flex-vertical c-center hide" id="id-not-found">
+					<div class="container card">
+						<h3 class="header-title text-center">Data tidak ditemukan</h3>
+					</div>
 				</div>
-			</div>
-		</main>
-		
-		<footer>
+			</main>
 			
-		</footer>
+			<footer>
+				
+			</footer>
+		</div>
 	</body>
 </html>
