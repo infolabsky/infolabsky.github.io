@@ -23,6 +23,7 @@ function getURLParam(){
 
 function getDataById(id, allData){
 	for(let data of allData){
+		console.log(data.id);
 		if(data.id.toUpperCase()==id.toUpperCase())
 			return data;
 	}
@@ -44,11 +45,11 @@ function showResult(targetId){
 }
 
 function standarizeStructure(rawData){
-	rawData = rawData.replaceAll(DATA_HEADER_NAME, "name");
-	rawData = rawData.replaceAll(DATA_HEADER_CLASS, "class");
-	rawData = rawData.replaceAll(DATA_HEADER_UID, "id");
-	rawData = rawData.replaceAll(DATA_HEADER_STAT, "status");
-	rawData = rawData.replaceAll(DATA_HEADER_STAT_2, "status2");
+	rawData = rawData.replace(DATA_HEADER_NAME, "name");
+	rawData = rawData.replace(DATA_HEADER_CLASS, "class");
+	rawData = rawData.replace(DATA_HEADER_UID, "id");
+	rawData = rawData.replace(DATA_HEADER_STAT, "status");
+	rawData = rawData.replace(DATA_HEADER_STAT_2, "status2");
 	return rawData;
 }
 
