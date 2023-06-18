@@ -2,7 +2,7 @@
 
 //UI general text
 const HEADER_TITLE = "PENGUMUMAN HASIL SELEKSI<br>TES POTENSI ORGANISASI<br>(TPO)<br>TA 2022-2023";
-const INPUT_LABEL = "Masukan Nomor Identifikasi:";
+const INPUT_LABEL = "Masukan Nama Lengkap:";
 
 //UI Result text
 //pass
