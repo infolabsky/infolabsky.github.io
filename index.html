@@ -14,8 +14,11 @@
 		
 		<main>
 			<div class="container hide" id="input-container">
-				<div class="container card">
-					<form class="container c-flex-vertical" onsubmit="return checkInput()" action="pages/result.html">
+				<div class="container card with-background" style="
+				max-width: 100%;
+				width: 300px;
+				height: calc((1960/1080)*300px);"> <!---->
+					<form class="container c-flex-vertical c-center" id="input-form" onsubmit="return checkInput()" action="pages/result.html" style="max-width: 30rem;">
 						<div class="container c-flex-vertical">
 							<label for="id" id="input-label"></label>
 							<input type="text" id="id-input" name="id">
@@ -23,10 +26,15 @@
 						<button>lihat hasil</button>
 					</form>
 					<div class="err-feedback text-center" id="err-feedback"></div>
+
+					<div class="container c-flex-vertical c-center hide" id="home-img" style="margin-top: 3em;">
+						<img class="logo-main" src="assets/images/logo.png"></img>
+						<h3 class="header-title text-center" id="header-title"
+							style="font-family: Arial, Helvetica, sans-serif;
+							color: blue;">
+						</h3>
+					</div>
 				</div>
-			</div>
-			<div class="container c-flex c-justify-center hide" id="home-img">
-				<img src="assets/images/home-img.svg"></img>
 			</div>
 		</main>
 		

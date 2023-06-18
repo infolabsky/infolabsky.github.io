@@ -11,3 +11,11 @@
 	box-shadow: 1px 1px 10px black;
 	border-radius: 10px;
 }
+
+#input-form{
+	max-width: 30rem;
+    background: #e4eb9cb0;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 2px 4px 6px gray;
+}

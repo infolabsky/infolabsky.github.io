@@ -20,7 +20,7 @@ function renderPassed(studentInfo){
 	DOMUtil.setTextContent("student-class", studentInfo.class);
 	DOMUtil.setTextContent("intro-text-end", INTRO_TEXT_END_PASS);
 	DOMUtil.setTextContent("student-result", studentInfo.status.toUpperCase());
-	DOMUtil.setInnerHtml("outtro-text", OUTTRO_TEXT_PASS);
+	DOMUtil.setInnerHtml("outtro-text", OUTTRO_TEXT_PASS + " " + studentInfo.position);
 	DOMUtil.setTextContent("additional-text", ADDITIONAL_TEXT_PASS);
 }
 
@@ -31,7 +31,7 @@ function renderFailed(studentInfo){
 	DOMUtil.setTextContent("intro-text-end", INTRO_TEXT_END_FAIL);
 	DOMUtil.setColor("student-result", "red");
 	DOMUtil.setTextContent("student-result", studentInfo.status.toUpperCase());
-	DOMUtil.setInnerHtml("outtro-text", OUTTRO_TEXT_FAIL);
+	DOMUtil.setInnerHtml("outtro-text", OUTTRO_TEXT_FAIL + " " + studentInfo.position);
 }
 
 function renderUnknown(studentInfo){

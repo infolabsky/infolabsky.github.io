@@ -23,7 +23,8 @@ function getURLParam(){
 
 function getDataById(id, allData){
 	for(let data of allData){
-		if(data.id==id)
+		console.log(data);
+		if(cleanInput(data.id.toUpperCase())==id.toUpperCase())
 			return data;
 	}
 }
@@ -48,6 +49,7 @@ function standarizeStructure(rawData){
 	rawData = rawData.replaceAll(DATA_HEADER_CLASS, "class");
 	rawData = rawData.replaceAll(DATA_HEADER_UID, "id");
 	rawData = rawData.replaceAll(DATA_HEADER_STAT, "status");
+	rawData = rawData.replaceAll(DATA_HEADER_POSITION, "position");
 	return rawData;
 }
 
