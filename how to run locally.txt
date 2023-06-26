@@ -12,3 +12,7 @@ how to:
 4. click path field, which contains e.g. "C:xxxx/yyyy/zzzz" and replace it with "cmd" to open current directory in cmd
 5. run npx command above
 6. localhost and the port should be shown and you can copy paste it in browser to see the result
+
+e2e test requirements:
+- python
+- selenium package

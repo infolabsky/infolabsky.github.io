@@ -23,7 +23,7 @@ function getURLParam(){
 
 function getDataById(id, allData){
 	for(let data of allData){
-		if(cleanInput(data.id.toUpperCase())==id.toUpperCase())
+		if(cleanInput(data.id.toUpperCase().trim())==id.toUpperCase().trim())
 			return data;
 	}
 }
