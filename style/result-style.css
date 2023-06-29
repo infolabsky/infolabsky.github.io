@@ -32,3 +32,10 @@
 	filter: drop-shadow(2px 4px 6px gray);
 }
 
+#pass-only{
+	background-color: beige;
+    border-radius: 5px;
+    border: solid 1px black;
+    padding: 1em;
+}
+

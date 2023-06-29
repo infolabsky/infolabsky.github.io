@@ -22,6 +22,7 @@ function renderPassed(studentInfo){
 	DOMUtil.setTextContent("student-result", studentInfo.status.toUpperCase());
 	DOMUtil.setInnerHtml("outtro-text", OUTTRO_TEXT_PASS + " " + studentInfo.position);
 	DOMUtil.setTextContent("additional-text", ADDITIONAL_TEXT_PASS);
+	DOMUtil.toggleClass("pass-only", "hide")
 }
 
 function renderFailed(studentInfo){
